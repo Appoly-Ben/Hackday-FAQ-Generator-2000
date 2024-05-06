@@ -1,7 +1,10 @@
 import './bootstrap';
+import { createApp } from "vue";
 
-import Alpine from 'alpinejs';
+import QAndA from './components/QAndA.vue';
 
-window.Alpine = Alpine;
+const app = createApp({});
 
-Alpine.start();
+app.component('q-and-a', QAndA);
+
+app.mount('#app');
